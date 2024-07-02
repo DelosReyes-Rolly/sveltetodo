@@ -10,6 +10,11 @@
 
 <style>
 	:global(body) {
-		background-color: gray;
+		background-image: url('todos-bg.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		margin: 0;
+		padding: 0;
 	}
 </style>

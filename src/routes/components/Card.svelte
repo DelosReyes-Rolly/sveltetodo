@@ -42,12 +42,14 @@
 		<Card style="margin: 8em auto 0;" size="xl">
 			<div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
 				{#each todoList as todo (todo.id)}
-					<Todo {todo} deleteOne={deleteTodo} {editTodo} />
+					<div class="mt-6"><Todo {todo} deleteOne={deleteTodo} {editTodo} /></div>
 				{:else}
-					-- No to do right now --
+					<div style="margin:auto;">
+						-- No to do right now --
+					</div>
 				{/each}
 				<button on:click={toggleModal}>
-					<Card size="sm" class="sm:mt-2" style="height:100px">
+					<Card size="sm" class="mt-6 ml-2 hover:bg-gray-200" style="height:60px">
 						<CirclePlusSolid size="xl" style="margin: auto;" />
 					</Card>
 				</button>

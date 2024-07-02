@@ -4,15 +4,15 @@ import { writable } from 'svelte/store';
 export let todos = writable([
     {
         id: 1,
-        title: 'Laundry',
-        description: 'need to finish it todayyy'
+        title: 'Buy food',
+        description: "Can't, 600 per day only"
     }, {
         id: 2,
-        title: 'Homework',
-        description: 'Deadline next week'
+        title: 'Find new job',
+        description: 'Need to fix resume.'
     }, {
         id: 3,
-        title: 'Cook meal with new recipe',
-        description: 'no money :('
+        title: 'Be happy',
+        description: "Can't, no money :("
     },
 ]);
