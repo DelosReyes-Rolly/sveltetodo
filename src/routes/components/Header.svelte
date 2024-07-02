@@ -27,9 +27,9 @@
 		</NavBrand>
 		<NavHamburger />
 		<NavUl
-			><p class="weekday">{weekday}</p>
-			, {dayMonth}</NavUl
-		>
+			><p class="weekday">{weekday},&nbsp;</p>
+			{dayMonth}
+		</NavUl>
 		<NavUl>
 			{today.toLocaleTimeString([], {
 				hour: '2-digit',
