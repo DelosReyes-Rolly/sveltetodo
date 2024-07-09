@@ -13,8 +13,14 @@
 </script>
 
 <main>
-	<Accordion class="sm:mt-2 ml-2 rounded-lg shadow-md" id="newCard" style="background-color: {red2}; border-radius: 10px 10px 0px 0px">
-		<AccordionItem class="hover:none">
+	<Accordion
+		class="ml-2 rounded-lg shadow-md sm:mt-2"
+		id="newCard"
+		style="background-color: {red2}; border-radius: 10px 10px 10px 10px"
+		activeClass="bg-red-200 text-blue-600 dark:text-white drop-shadow-2xl"
+		inactiveClass="text-gray-500 dark:text-gray-400 hover:bg-red-200 dark:hover:bg-gray-800 drop-shadow-2xl"
+	>
+		<AccordionItem>
 			<div slot="header">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 					{todo.title}

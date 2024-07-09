@@ -31,16 +31,16 @@
 			<form on:submit|preventDefault={handleSubmit}>
 				<Label class="space-y-2">
 					<span>Title</span>
-					<Input type="text" placeholder="Title" size="lg" bind:value={title} class="shadow-md">
+					<Input type="text" placeholder="Title" size="lg" bind:value={title} class="shadow-xl">
 						<BookOpenOutline slot="left" class="h-6 w-6" />
 					</Input>
 				</Label>
 				<br />
 				<Label class="space-y-2">
 					<span>Description</span>
-					<Textarea class="mb-4 shadow-lg" placeholder="Write a comment" bind:value={description}>
+					<Textarea class="mb-4 shadow-xl" placeholder="Write a comment" bind:value={description}>
 						<div slot="footer" class="flex items-center justify-between">
-							<Button type="submit">Post to do</Button>
+							<Button type="submit" class="shadow-xl">Post to do</Button>
 						</div>
 					</Textarea>
 				</Label>
